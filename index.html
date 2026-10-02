@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5b0d1b">
+  <title>Un año juntos — C & A</title>
+  <meta name="description" content="Un pequeño álbum para celebrar nuestro primer año juntos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="hearts" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div class="hero__veil"></div>
+    <nav class="nav">
+      <span class="brand">C + A</span>
+      <a href="#album">Nuestro álbum</a>
+    </nav>
+    <div class="hero__content reveal">
+      <p class="eyebrow">04 · 10 · 2025</p>
+      <h1>Un año <span>juntos</span></h1>
+      <p class="hero__phrase">365 días amándote.</p>
+      <a class="scroll" href="#historia">Descubre nuestra historia <span>↓</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro section" id="historia">
+      <div class="section-number">01</div>
+      <div class="intro__text reveal">
+        <p class="script">Todo comenzó contigo</p>
+        <h2>Un año que quiero guardar para siempre.</h2>
+        <p>Este espacio es nuestro pequeño álbum: momentos, recuerdos y palabras que me recuerdan por qué me hace tan feliz compartir mi vida contigo.</p>
+      </div>
+      <figure class="photo-card photo-card--large reveal tilt-left">
+        <img src="img/foto-principal.jpg" alt="Nuestra foto favorita" onerror="this.parentElement.classList.add('placeholder')">
+        <figcaption>Esta foto me encanta ♡</figcaption>
+      </figure>
+    </section>
+
+    <section class="album section" id="album">
+      <div class="section-heading reveal">
+        <div class="section-number">02</div>
+        <p class="script">Nuestros momentos</p>
+        <h2>Un pedacito de nosotros</h2>
+        
+
+      <div class="album-grid">
+        <figure class="photo-card reveal tilt-left"><img src="img/foto-01.jpg" alt="Recuerdo 1" onerror="this.parentElement.classList.add('placeholder')"><figcaption>Te amo</figcaption></figure>
+        <figure class="photo-card reveal tilt-right"><img src="img/foto-02.jpg" alt="Recuerdo 2" onerror="this.parentElement.classList.add('placeholder')"><figcaption>Eres mi vida</figcaption></figure>
+        <figure class="photo-card photo-card--wide reveal"><img src="img/foto-03.jpg" alt="Recuerdo 3" onerror="this.parentElement.classList.add('placeholder')"><figcaption>Besito</figcaption></figure>
+        <figure class="photo-card reveal tilt-right"><img src="img/foto-04.jpg" alt="Recuerdo 4" onerror="this.parentElement.classList.add('placeholder')"><figcaption>Me encanta estar contigo</figcaption></figure>
+        <figure class="photo-card reveal tilt-left"><img src="img/foto-05.jpg" alt="Recuerdo 5" onerror="this.parentElement.classList.add('placeholder')"><figcaption>Tu y yo ♡</figcaption></figure>
+        <figure class="photo-card photo-card--wide reveal"><img src="img/foto-06.jpg" alt="Recuerdo 6" onerror="this.parentElement.classList.add('placeholder')"><figcaption>Devorando</figcaption></figure>
+      </div>
+    </section>
+
+
+    <!-- JUEGO 1: CAMBIA LAS FOTOS Y LOS TEXTOS DE LAS PISTAS AQUÍ -->
+    <section class="memory-game section" id="juegos">
+      <div class="section-heading reveal">
+        <div class="section-number">03</div><p class="script">¿Te acuerdas?</p>
+        <h2>Adivina nuestro recuerdo ♡</h2>
+        <p>Lee la pista y toca la foto que corresponde. </p>
+      </div>
+      <div class="quiz-card reveal">
+        <div class="quiz-progress"><span id="quizStep">Recuerdo 1 de 3</span><div><i id="quizBar"></i></div></div>
+        <p class="quiz-kicker">PISTA</p><h3 id="quizClue">Nuestra salida a comer helado 🍦</h3>
+        <p class="quiz-help">¿Cuál de estas fotos pertenece a ese momento?</p>
+        <div class="quiz-photos" id="quizPhotos"></div>
+        <div class="quiz-result" id="quizResult" aria-live="polite"></div>
+        <button class="next-memory" id="nextMemory" type="button" hidden>Siguiente recuerdo →</button>
+      </div>
+    </section>
+
+    <!-- JUEGO 2: cada tarjeta se voltea al tocarla -->
+    <section class="flip-section section">
+      <div class="section-heading reveal"><div class="section-number">04</div><p class="script">Toca para descubrir</p><h2>Fotos que guardan palabras</h2><p>Cada recuerdo tiene algo que quiero decirte.</p></div>
+      <div class="flip-grid">
+        <button class="flip-card reveal" type="button"><span class="flip-inner"><span class="flip-front"><img src="img/sorpresa-01.jpg" alt="Recuerdo sorpresa 1" onerror="this.style.display='none';this.parentElement.classList.add('missing-flip');this.parentElement.dataset.filename='sorpresa-01.jpg'"><b>TOCA LA FOTO ♡</b></span><span class="flip-back"><em>♡</em><strong>Mi lugar favorito</strong><p>No es un sitio. Es cualquier lugar en el que pueda estar contigo.</p></span></span></button>
+        <button class="flip-card reveal" type="button"><span class="flip-inner"><span class="flip-front"><img src="img/sorpresa-02.jpg" alt="Recuerdo sorpresa 2" onerror="this.style.display='none';this.parentElement.classList.add('missing-flip');this.parentElement.dataset.filename='sorpresa-02.jpg'"><b>DESCUBRE EL MENSAJE</b></span><span class="flip-back"><em>♡</em><strong>Gracias por...</strong><p>hacer especiales incluso esos días que parecían completamente normales.</p></span></span></button>
+        <button class="flip-card reveal" type="button"><span class="flip-inner"><span class="flip-front"><img src="img/sorpresa-03.jpg" alt="Recuerdo sorpresa 3" onerror="this.style.display='none';this.parentElement.classList.add('missing-flip');this.parentElement.dataset.filename='sorpresa-03.jpg'"><b>HAY ALGO DETRÁS</b></span><span class="flip-back"><em>♡</em><strong>Lo volvería a vivir</strong><p>Una y mil veces, si al final de cada historia vuelvo a encontrarte a ti.</p></span></span></button>
+      </div>
+    </section>
+
+    
+
+    <section class="counter-section section">
+      <div class="counter-card reveal">
+        <p class="script">Desde aquel día...</p>
+        <h2>Nuestro tiempo juntos</h2>
+        <div class="counter" id="counter">
+          <div><strong id="days">0</strong><span>días</span></div>
+          <div><strong id="hours">0</strong><span>horas</span></div>
+          <div><strong id="minutes">0</strong><span>minutos</span></div>
+          <div><strong id="seconds">0</strong><span>segundos</span></div>
+        </div>
+        <p class="counter-note">Contando desde el 4 de octubre de 2025 ♡</p>
+      </div>
+    </section>
+
+    <section class="reasons section">
+      <div class="section-heading reveal">
+        <div class="section-number">06</div>
+        <p class="script">Lo que veo en ti</p>
+        <h2>Pequeñas razones para elegirte</h2>
+      </div>
+      <div class="reason-list">
+        <article class="reason reveal"><span>01</span><h3>Tu forma de querer</h3><p>Eres atento, cariñoso y tienes una manera muy tuya de hacerme sentir especial.</p></article>
+        <article class="reason reveal"><span>02</span><h3>Los detalles</h3><p>Me encanta que el cariño no se quede solo en palabras, sino que también se note en tus acciones.</p></article>
+        <article class="reason reveal"><span>03</span><h3>Lo que construimos</h3><p>Me gusta saber que los dos ponemos de nuestra parte, aprendemos y seguimos avanzando juntos.</p></article>
+      </div>
+    </section>
+
+    <section class="surprise section">
+      <div class="surprise__content reveal">
+        <p class="script">Tengo algo más que decirte...</p>
+        <h2>Para ti, amor ♡</h2>
+        <button class="love-button" id="openLetter">Abrir mi carta</button>
+      </div>
+    </section>
+
+    <section class="final-photo section reveal">
+      <figure>
+        <img src="img/foto-final.jpg" alt="Nuestra foto final" onerror="this.parentElement.classList.add('placeholder')">
+      </figure>
+      <div class="final-copy">
+        <p class="script">Feliz primer año</p>
+        <h2>Te elegiría una y otra vez.</h2>
+        <p>Gracias por este primer capítulo. Espero que sea solo el comienzo de muchísimas historias más.</p>
+        <div class="signature">C + A</div>
+        <div class="date">04 · 10 · 2025</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>Te amooooo♡</footer>
+
+  <div class="modal" id="letterModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <article class="letter">
+      <button class="letter__close" data-close aria-label="Cerrar">×</button>
+      <p class="script">Para ti</p>
+      <h2>Mi amor,</h2>
+      <p>Hoy cumplimos un año y quería dejarte algo que pudieras volver a abrir cada vez que quisieras recordar todo lo bonito que hemos construido.</p>
+      <p>Yo veo en ti a un gran hombre, de esos que demuestran con acciones lo mucho que les importa una persona. Eres detallista, atento y cariñoso, y me gusta ver cómo juntos estamos haciendo las cosas bien, aprendiendo y creciendo a nuestra manera.</p>
+      <p>No necesito que todo sea perfecto. Me hace feliz saber que nos elegimos, que ponemos de nuestra parte y que todavía tenemos muchísimo por vivir.</p>
+      <p class="letter__ending">Feliz Aniversario . Te amoooo♡</p>
+      <p class="letter__sign">— Adriana</p>
+    </article>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

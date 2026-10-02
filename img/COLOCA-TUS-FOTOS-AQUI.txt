@@ -1,0 +1,32 @@
+PON TODAS LAS FOTOS EN ESTA CARPETA CON ESTOS NOMBRES:
+
+ÁLBUM:
+foto-principal.jpg
+foto-01.jpg
+foto-02.jpg
+foto-03.jpg
+foto-04.jpg
+foto-05.jpg
+foto-06.jpg
+foto-final.jpg
+
+ADIVINA EL RECUERDO:
+juego-helado.jpg  ← foto correcta de la salida a comer helado
+juego-02.jpg
+juego-03.jpg
+juego-04.jpg
+juego-risas.jpg   ← foto correcta del recuerdo de risas
+juego-06.jpg
+juego-07.jpg
+juego-08.jpg
+juego-favorito.jpg ← foto correcta del recuerdo favorito
+
+TARJETAS QUE SE VOLTEAN:
+sorpresa-01.jpg
+sorpresa-02.jpg
+sorpresa-03.jpg
+
+MEMORAMA:
+memoria-01.jpg
+memoria-02.jpg
+memoria-03.jpg

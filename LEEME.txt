@@ -1,0 +1,75 @@
+UN AÑO JUNTOS — C + C
+======================
+
+Esta versión conserva el MISMO estilo dinámico original. Solo se completaron y aclararon todos los espacios de imágenes.
+
+CARPETA DE FOTOS
+----------------
+Coloca TODAS tus fotos dentro de la carpeta: img/
+
+A. PORTADA / ÁLBUM
+- foto-principal.jpg  → foto grande de introducción
+- foto-01.jpg         → álbum 1
+- foto-02.jpg         → álbum 2
+- foto-03.jpg         → álbum 3
+- foto-04.jpg         → álbum 4
+- foto-05.jpg         → álbum 5
+- foto-06.jpg         → álbum 6
+- foto-final.jpg      → fotografía del cierre
+
+B. JUEGO “ADIVINA NUESTRO RECUERDO”
+RECUERDO 1 — salida a comer helado 🍦
+- juego-helado.jpg    → RESPUESTA CORRECTA: pon aquí la foto comiendo helado
+- juego-02.jpg        → opción incorrecta
+- juego-03.jpg        → opción incorrecta
+
+RECUERDO 2 — día de risas
+- juego-04.jpg        → opción incorrecta
+- juego-risas.jpg     → RESPUESTA CORRECTA
+- juego-06.jpg        → opción incorrecta
+
+RECUERDO 3 — recuerdo favorito
+- juego-07.jpg        → opción incorrecta
+- juego-08.jpg        → opción incorrecta
+- juego-favorito.jpg  → RESPUESTA CORRECTA
+
+IMPORTANTE: Si una de estas fotos todavía no existe, la propia tarjeta mostrará “PON AQUÍ TU FOTO” y el nombre exacto del archivo.
+
+C. TARJETAS “FOTOS QUE GUARDAN PALABRAS”
+- sorpresa-01.jpg
+- sorpresa-02.jpg
+- sorpresa-03.jpg
+Al tocar cada foto, la tarjeta se voltea y muestra el mensaje.
+
+D. MINI MEMORAMA
+- memoria-01.jpg
+- memoria-02.jpg
+- memoria-03.jpg
+El código crea automáticamente dos tarjetas de cada foto para formar las 3 parejas.
+
+CAMBIAR LAS PISTAS DEL JUEGO
+----------------------------
+Abre js/script.js y busca: const memoryQuestions = [
+Ahí puedes cambiar:
+- clue = la pista
+- photos = las tres fotos
+- correct = cuál es la correcta (0 primera, 1 segunda, 2 tercera)
+- message = mensaje al acertar
+
+CAMBIAR TEXTOS, CARTA Y MENSAJES
+--------------------------------
+Abre index.html. Ahí puedes modificar las frases del álbum, las tarjetas, las razones, la carta final, la firma y la fecha visible.
+
+FECHA DEL CONTADOR
+------------------
+En js/script.js está:
+const anniversaryStart = new Date(2025, 9, 4, 0, 0, 0);
+El 9 representa octubre porque JavaScript cuenta los meses desde 0.
+
+ABRIR LA WEB
+------------
+Haz doble clic en index.html. Para editar y verla en vivo puedes usar Visual Studio Code + Live Server.
+
+PUBLICAR Y QR
+-------------
+Cuando termines las fotos y textos, publica la carpeta completa en Netlify/GitHub Pages/Vercel. Después genera un QR con la URL pública.
